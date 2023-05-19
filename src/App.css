@@ -1,0 +1,75 @@
+.container {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: '\25BE';
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 10px;
+  font-size: 10px;
+}
+
+.select-custom {
+  appearance: none;
+  width: 100%;
+  padding: 10px;
+  height: 40px; /* Define a altura do select */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  color: #333; /* Define a cor do texto do select */
+  font-size: 14px; /* Define o tamanho da fonte do select */
+}
+
+.select-custom option {
+  background-color: #fff;
+}
+
+.jumbotron {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  margin-top: 40px;
+  max-width: 500px;
+  align-items: center;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.design-padronizado {
+  width:100%;
+}
+
+.spacer {
+  height: 30px;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 20px;
+  }
+}
